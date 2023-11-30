@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Closure;
 use App\Models\Question;
+use Closure;
 use Illuminate\Http\RedirectResponse;
 
 class QuestionController extends Controller
@@ -18,8 +18,8 @@ class QuestionController extends Controller
                     if ($value[strlen($value) - 1] != '?') {
                         $fail('Are you sure that is a question ? It is missing the question mark in the end.');
                     }
-                }
-            ]
+                },
+            ],
         ]);
 
         Question::query()->create($attributes);
