@@ -4,13 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\Question;
 use Closure;
-use Illuminate\Http\RedirectResponse;
 
 class QuestionController extends Controller
 {
     public function store()
     {
-        
+
         $attributes = request()->validate([
             'question' => [
                 'required',
@@ -22,8 +21,7 @@ class QuestionController extends Controller
                 },
             ],
         ]);
-        
-      
+
         Question::query()->create($attributes);
 
         return to_route('dashboard');
