@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\Question;
-use Illuminate\Support\Facades\View;
+use Illuminate\Contracts\View\View;
 
 class DashboardController extends Controller
 {
-    public function __invoke()
+    public function __invoke(): view
     {
 
-        return View::make('dashboard', ['questions' => Question::all()]);
+        return view('dashboard', ['questions' => Question::all()]);
     }
 }
