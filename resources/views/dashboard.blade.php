@@ -18,6 +18,21 @@
 
             </x-form>
 
+            {{-- <br/> --}}
+
+            <hr class="border-gray-400">
+            <br />
+
+            {{-- listagem --}}
+
+            <div class="dark:text-gray-200 text-xl mb-4">List of questions:</div>
+
+            <div class="space-y-4">
+                @foreach ($questions as $q)
+                    <x-question :question="$q" />
+                @endforeach
+
+            </div>
         </div>
     </div>
 
