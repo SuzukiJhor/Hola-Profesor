@@ -1,7 +1,5 @@
 
-- develop  : [![CI](https://github.com/SuzukiJhor/Hola-Profesor/actions/workflows/laravel.yml/badge.svg?branch=develop)](https://github.com/SuzukiJhor/Hola-Profesor/actions/workflows/laravel.yml)
-<br/> <br/>
-- main     : [![CI](https://github.com/SuzukiJhor/Hola-Profesor/actions/workflows/laravel.yml/badge.svg?branch=main)](https://github.com/SuzukiJhor/Hola-Profesor/actions/workflows/laravel.yml)
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
 ## About Hola-Profesor!
 
